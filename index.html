@@ -11,9 +11,38 @@
             <meta name="twitter:card" content="summary">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
             <link rel="stylesheet" href="style.css?v=fd6b89b3">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            <script>
+                function searchBooths() {
+                    let input = document.getElementById('search-input');
+                    let filter = input.value.toLowerCase();
+                    let boothElements = document.getElementsByClassName('booth-name');
+
+                    for (let i = 0; i < boothElements.length; i++) {
+                        let booth = boothElements[i];
+                        let searchText = booth.getAttribute('data-search').toLowerCase();
+                        let groupTile = booth.closest('.group-tile');
+                        
+                        if (searchText.includes(filter)) {
+                            groupTile.style.display = "";
+                        } else {
+                            groupTile.style.display = "none";
+                        }
+                    }
+                }
+            </script>
         </head>
         <body>
             <div class="container-fluid">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-12 col-lg-10">
+                        <div class="card">
+                            <div class="card-body">
+                                <input type="text" class="form-control" id="search-input" placeholder="Search by booth name..." onkeyup="searchBooths()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row justify-content-center position-fixed bottom-0 start-0 w-100" style="z-index: 1000;">
                     <div class="col-12 col-lg-10">
                         <div class="card border-0">
@@ -21,13 +50,15 @@
                                 <div class="overflow-auto" style="max-height: 45vh;">
                                     <div class="" id="map-container">
                                         <img class="img-fluid rounded shadow-sm w-100" id="floorplan" src="cosplayerfloor.png?v=204e64ba" draggable="false" alt="comic fiesta 2024 floorplan">
+                                        <div class="text-end mt-2">
+                                            <button onclick="document.getElementById('map-container').style.display='none';this.style.display='none';document.getElementById('map-show-btn').style.display='block'" id="map-hide-btn" class="btn btn-sm btn-light m-2">Hide Map</button>
+                                            <button onclick="document.getElementById('map-container').style.display='block';this.style.display='none';document.getElementById('map-hide-btn').style.display='block'" id="map-show-btn" class="btn btn-sm btn-light m-2" style="display:none">Show Map</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button onclick="document.getElementById('map-container').style.display='none';this.style.display='none';document.getElementById('map-show-btn').style.display='block'" id="map-hide-btn" class="btn btn-sm btn-light position-absolute bottom-0 end-0 m-2">Hide Map</button>
-                    <button onclick="document.getElementById('map-container').style.display='block';this.style.display='none';document.getElementById('map-hide-btn').style.display='block'" id="map-show-btn" class="btn btn-sm btn-light position-absolute bottom-0 end-0 m-2" style="display:none">Show Map</button>
                 </div>
                 <div class="row justify-content-center text-center">
                     <div class="col-12 col-lg-10 mx-auto">
@@ -41,7 +72,7 @@
                                     <div class="group-tile" data-group-index="306">
                                         <div class="booth-detail">
                                             <h3 class="booth-number">c-a01</h3>
-                                        <h3 class="booth-name">ely cosplay</h3>
+                                        <h3 class="booth-name" data-search="ely cosplay">ely cosplay</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -58,7 +89,7 @@
                                     <div class="group-tile" data-group-index="307">
                                         <div class="booth-detail">
                                             <h3 class="booth-number">c-a02</h3>
-                                            <h3 class="booth-name">lea_coser</h3>
+                                            <h3 class="booth-name" data-search="lea_coser">lea_coser</h3>
                                             <div class="circle-detail"></div>
                                             <div class="circle-tag-container">
                                                 <div class="circle-tag">badges / pins</div>
@@ -72,7 +103,7 @@
                                     <div class="group-tile" data-group-index="308">
                                         <div class="booth-detail">
                                             <h3 class="booth-number">c-a03</h3>
-                                            <h3 class="booth-name">蚊子wenzi</h3>
+                                            <h3 class="booth-name" data-search="蚊子wenzi">蚊子wenzi</h3>
                                             <div class="circle-detail"></div>
                                             <div class="circle-tag-container">
                                                 <div class="circle-tag">badges / pins</div>
@@ -87,7 +118,7 @@
                                     <div class="group-tile" data-group-index="309">
                                         <div class="booth-detail">
                                             <h3 class="booth-number">c-a05-06</h3>
-                                            <h3 class="booth-name">yingtze</h3>
+                                            <h3 class="booth-name" data-search="yingtze">yingtze</h3>
                                             <div class="circle-detail"></div>
                                             <div class="circle-tag-container">
                                                 <div class="circle-tag">photobook</div>
@@ -100,7 +131,7 @@
                                     <div class="group-tile" data-group-index="310">
                                         <div class="booth-detail">
                                             <h3 class="booth-number">c-a07-08</h3>
-                                            <h3 class="booth-name">aza miyuko</h3>
+                                            <h3 class="booth-name" data-search="aza miyuko">aza miyuko</h3>
                                             <div class="circle-detail"></div>
                                             <div class="circle-tag-container">
                                                 <div class="circle-tag">keychains</div>
@@ -116,7 +147,7 @@
                                         <div class="group-tile" data-group-index="311">
                                             <div class="booth-detail">
                                                 <h3 class="booth-number">c-a09</h3>
-                                            <h3 class="booth-name">senyuki cosplayer</h3>
+                                            <h3 class="booth-name" data-search="senyuki cosplayer">senyuki cosplayer</h3>
                                             <div class="circle-detail"></div>
                                             <div class="circle-tag-container">
                                                 <div class="circle-tag">badges / pins</div>
@@ -134,7 +165,7 @@
                                     <div class="group-tile" data-group-index="312">
                                         <div class="booth-detail">
                                             <h3 class="booth-number">c-a10</h3>
-                                            <h3 class="booth-name">kagami 镜</h3>
+                                            <h3 class="booth-name" data-search="kagami 镜">kagami 镜</h3>
                                             <div class="circle-detail"></div>
                                             <div class="circle-tag-container">
                                                 <div class="circle-tag">badges / pins</div>
@@ -151,7 +182,7 @@
                                     <div class="group-tile" data-group-index="313">
                                         <div class="booth-detail">
                                             <h3 class="booth-number">c-a11-12</h3>
-                                            <h3 class="booth-name">hayate 小爹 x kane 凯恩</h3>
+                                            <h3 class="booth-name" data-search="hayate 小爹 x kane 凯恩">hayate 小爹 x kane 凯恩</h3>
                                             <div class="circle-detail"></div>
                                             <div class="circle-tag-container">
                                                 <div class="circle-tag">badges / pins</div>
@@ -170,7 +201,7 @@
                                     <div class="group-tile" data-group-index="314">
                                         <div class="booth-detail">
                                             <h3 class="booth-number">c-a13</h3>
-                                            <h3 class="booth-name">eevon_cosplayer</h3>
+                                            <h3 class="booth-name" data-search="eevon_cosplayer">eevon_cosplayer</h3>
                                             <div class="circle-detail"></div>
                                             <div class="circle-tag-container">
                                                 <div class="circle-tag">badges / pins</div>
@@ -187,7 +218,7 @@
                                     <div class="group-tile" data-group-index="315">
                                         <div class="booth-detail">
                                             <h3 class="booth-number">c-a14</h3>
-                                            <h3 class="booth-name">weii weii</h3>
+                                            <h3 class="booth-name" data-search="weii weii">weii weii</h3>
                                             <div class="circle-detail"></div>
                                             <div class="circle-tag-container">
                                                 <div class="circle-tag">badges / pins</div>
@@ -204,7 +235,7 @@
                                     <div class="group-tile" data-group-index="316">
                                         <div class="booth-detail">
                                             <h3 class="booth-number">c-a15</h3>
-                                            <h3 class="booth-name">jetaime呆咪</h3>
+                                            <h3 class="booth-name" data-search="jetaime呆咪">jetaime呆咪</h3>
                                             <div class="circle-detail"></div>
                                             <div class="circle-tag-container">
                                                 <div class="circle-tag">badges / pins</div>
@@ -222,7 +253,7 @@
                                     <div class="group-tile" data-group-index="317">
                                         <div class="booth-detail">
                                             <h3 class="booth-number">c-a16</h3>
-                                            <h3 class="booth-name">rikkablurhound</h3>
+                                            <h3 class="booth-name" data-search="rikkablurhound">rikkablurhound</h3>
                                             <div class="circle-detail"></div>
                                             <div class="circle-tag-container">
                                                 <div class="circle-tag">badges / pins</div>
@@ -247,7 +278,7 @@
                                 <div class="group-tile" data-group-index="318">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b01</h3>
-                                        <h3 class="booth-name">animajinx team</h3>
+                                        <h3 class="booth-name" data-search="animajinx team">animajinx team</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -263,7 +294,7 @@
                                 <div class="group-tile" data-group-index="319">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b02</h3>
-                                        <h3 class="booth-name">ymca (yuki x miiko)</h3>
+                                        <h3 class="booth-name" data-search="ymca (yuki x miiko)">ymca (yuki x miiko)</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container"></div>
                                         <div class="circle-tag-container"></div>
@@ -272,7 +303,7 @@
                                 <div class="group-tile" data-group-index="320">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b03</h3>
-                                        <h3 class="booth-name">ruii洛忆</h3>
+                                        <h3 class="booth-name" data-search="ruii洛忆">ruii洛忆</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -289,7 +320,7 @@
                                 <div class="group-tile" data-group-index="321">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b04</h3>
-                                        <h3 class="booth-name">helenyan</h3>
+                                        <h3 class="booth-name" data-search="helenyan">helenyan</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">keychains</div>
@@ -303,7 +334,7 @@
                                 <div class="group-tile" data-group-index="322">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b05</h3>
-                                        <h3 class="booth-name">ebi 熊熊虾米</h3>
+                                        <h3 class="booth-name" data-search="ebi 熊熊虾米">ebi 熊熊虾米</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container"></div>
                                         <div class="circle-tag-container"></div>
@@ -312,7 +343,7 @@
                                 <div class="group-tile" data-group-index="323">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b06</h3>
-                                        <h3 class="booth-name">堕天yuxo</h3>
+                                        <h3 class="booth-name" data-search="堕天yuxo">堕天yuxo</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -328,7 +359,7 @@
                                 <div class="group-tile" data-group-index="324">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b07</h3>
-                                        <h3 class="booth-name">victoria薇薇</h3>
+                                        <h3 class="booth-name" data-search="victoria薇薇">victoria薇薇</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -348,7 +379,7 @@
                                 <div class="group-tile" data-group-index="325">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b08</h3>
-                                        <h3 class="booth-name">king angel 天王</h3>
+                                        <h3 class="booth-name" data-search="king angel 天王">king angel 天王</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -367,7 +398,7 @@
                                 <div class="group-tile" data-group-index="326">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b09-10</h3>
-                                        <h3 class="booth-name">thames</h3>
+                                        <h3 class="booth-name" data-search="thames">thames</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">photobook</div>
@@ -380,7 +411,7 @@
                                 <div class="group-tile" data-group-index="327">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b11</h3>
-                                        <h3 class="booth-name">i'm momoko</h3>
+                                        <h3 class="booth-name" data-search="i'm momoko">i'm momoko</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -395,7 +426,7 @@
                                 <div class="group-tile" data-group-index="328">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b12</h3>
-                                        <h3 class="booth-name">akaei ray</h3>
+                                        <h3 class="booth-name" data-search="akaei ray">akaei ray</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">keychains</div>
@@ -410,7 +441,7 @@
                                 <div class="group-tile" data-group-index="329">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b13</h3>
-                                        <h3 class="booth-name">le josette</h3>
+                                        <h3 class="booth-name" data-search="le josette">le josette</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -424,7 +455,7 @@
                                 <div class="group-tile" data-group-index="330">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b14</h3>
-                                        <h3 class="booth-name">azulacan</h3>
+                                        <h3 class="booth-name" data-search="azulacan">azulacan</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -441,7 +472,7 @@
                                 <div class="group-tile" data-group-index="331">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b15</h3>
-                                        <h3 class="booth-name">jiajia佳佳</h3>
+                                        <h3 class="booth-name" data-search="jiajia佳佳">jiajia佳佳</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -457,7 +488,7 @@
                                 <div class="group-tile" data-group-index="332">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-b16</h3>
-                                        <h3 class="booth-name">rithe daddy</h3>
+                                        <h3 class="booth-name" data-search="rithe daddy">rithe daddy</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -481,7 +512,7 @@
                                 <div class="group-tile" data-group-index="333">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c01</h3>
-                                        <h3 class="booth-name">rynna遴儿</h3>
+                                        <h3 class="booth-name" data-search="rynna遴儿">rynna遴儿</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -498,7 +529,7 @@
                                 <div class="group-tile" data-group-index="334">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c02</h3>
-                                        <h3 class="booth-name">phi 霏</h3>
+                                        <h3 class="booth-name" data-search="phi 霏">phi 霏</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -511,7 +542,7 @@
                                 <div class="group-tile" data-group-index="335">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c03</h3>
-                                        <h3 class="booth-name">vmeow-inkol</h3>
+                                        <h3 class="booth-name" data-search="vmeow-inkol">vmeow-inkol</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">keychains</div>
@@ -526,7 +557,7 @@
                                 <div class="group-tile" data-group-index="336">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c04</h3>
-                                        <h3 class="booth-name">momoko.xoxo小魔</h3>
+                                        <h3 class="booth-name" data-search="momoko.xoxo小魔">momoko.xoxo小魔</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -544,7 +575,7 @@
                                 <div class="group-tile" data-group-index="337">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c05</h3>
-                                        <h3 class="booth-name">nessarose cosplayer</h3>
+                                        <h3 class="booth-name" data-search="nessarose cosplayer">nessarose cosplayer</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -562,7 +593,7 @@
                                 <div class="group-tile" data-group-index="338">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c06</h3>
-                                        <h3 class="booth-name">yuii鱿鱼 (inkol)</h3>
+                                        <h3 class="booth-name" data-search="yuii鱿鱼 (inkol)">yuii鱿鱼 (inkol)</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -576,7 +607,7 @@
                                 <div class="group-tile" data-group-index="339">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c07-08</h3>
-                                        <h3 class="booth-name">mikki</h3>
+                                        <h3 class="booth-name" data-search="mikki" data-search-type="cosplayer">mikki</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">photobook</div>
@@ -590,7 +621,7 @@
                                 <div class="group-tile" data-group-index="340">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c09</h3>
-                                        <h3 class="booth-name">crystal x cheryl</h3>
+                                        <h3 class="booth-name" data-search="crystal x cheryl">crystal x cheryl</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -609,7 +640,7 @@
                                 <div class="group-tile" data-group-index="341">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c10</h3>
-                                        <h3 class="booth-name">tsuyu-sei x hana 月花</h3>
+                                        <h3 class="booth-name" data-search="tsuyu-sei x hana 月花">tsuyu-sei x hana 月花</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -626,7 +657,7 @@
                                 <div class="group-tile" data-group-index="342">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c11</h3>
-                                        <h3 class="booth-name">mai mai cosplayer</h3>
+                                        <h3 class="booth-name" data-search="mai mai cosplayer">mai mai cosplayer</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -641,7 +672,7 @@
                                 <div class="group-tile" data-group-index="343">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c12</h3>
-                                        <h3 class="booth-name">karyannn奶茶</h3>
+                                        <h3 class="booth-name" data-search="karyannn奶茶">karyannn奶茶</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -659,7 +690,7 @@
                                 <div class="group-tile" data-group-index="344">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c13</h3>
-                                        <h3 class="booth-name">kurisu</h3>
+                                        <h3 class="booth-name" data-search="kurisu">kurisu</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -678,7 +709,7 @@
                                 <div class="group-tile" data-group-index="345">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c14</h3>
-                                        <h3 class="booth-name">manami x jenny</h3>
+                                        <h3 class="booth-name" data-search="manami x jenny">manami x jenny</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -695,7 +726,7 @@
                                 <div class="group-tile" data-group-index="346">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c15</h3>
-                                        <h3 class="booth-name">lizzy (inkol)</h3>
+                                        <h3 class="booth-name" data-search="lizzy (inkol)">lizzy (inkol)</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -710,7 +741,7 @@
                                 <div class="group-tile" data-group-index="347">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-c16</h3>
-                                        <h3 class="booth-name">hiyori xiaoxia</h3>
+                                        <h3 class="booth-name" data-search="hiyori xiaoxia">hiyori xiaoxia</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -733,7 +764,7 @@
                                 <div class="group-tile" data-group-index="348">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e01</h3>
-                                        <h3 class="booth-name">hanabi花火</h3>
+                                        <h3 class="booth-name" data-search="hanabi花火">hanabi花火</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -748,7 +779,7 @@
                                 <div class="group-tile" data-group-index="349">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e02</h3>
-                                        <h3 class="booth-name">ryukku-k</h3>
+                                        <h3 class="booth-name" data-search="ryukku-k">ryukku-k</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -768,7 +799,7 @@
                                 <div class="group-tile" data-group-index="350">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e03</h3>
-                                        <h3 class="booth-name">kaixin花生</h3>
+                                        <h3 class="booth-name" data-search="kaixin花生">kaixin花生</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -785,7 +816,7 @@
                                 <div class="group-tile" data-group-index="351">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e04</h3>
-                                        <h3 class="booth-name">reiko miiao</h3>
+                                        <h3 class="booth-name" data-search="reiko miiao">reiko miiao</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -804,7 +835,7 @@
                                 <div class="group-tile" data-group-index="352">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e05</h3>
-                                        <h3 class="booth-name">rina.tan</h3>
+                                        <h3 class="booth-name" data-search="rina.tan">rina.tan</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -822,7 +853,7 @@
                                 <div class="group-tile" data-group-index="353">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e06</h3>
-                                        <h3 class="booth-name">stella</h3>
+                                        <h3 class="booth-name" data-search="stella">stella</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -840,7 +871,7 @@
                                 <div class="group-tile" data-group-index="354">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e07</h3>
-                                        <h3 class="booth-name">chaerin 柔</h3>
+                                        <h3 class="booth-name" data-search="chaerin 柔">chaerin 柔</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -860,7 +891,7 @@
                                 <div class="group-tile" data-group-index="355">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e08</h3>
-                                        <h3 class="booth-name">mochii(inkol)</h3>
+                                        <h3 class="booth-name" data-search="mochii(inkol)" data-search-type="cosplayer">mochii(inkol)</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -877,7 +908,7 @@
                                 <div class="group-tile" data-group-index="356">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e09-10</h3>
-                                        <h3 class="booth-name">baobao</h3>
+                                        <h3 class="booth-name" data-search="baobao">baobao</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -892,7 +923,7 @@
                                 <div class="group-tile" data-group-index="357">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e11</h3>
-                                        <h3 class="booth-name">zackt and roxanne</h3>
+                                        <h3 class="booth-name" data-search="zackt and roxanne">zackt and roxanne</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -906,7 +937,7 @@
                                 <div class="group-tile" data-group-index="358">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e12</h3>
-                                        <h3 class="booth-name">takodesss (inkol)</h3>
+                                        <h3 class="booth-name" data-search="takodesss (inkol)">takodesss (inkol)</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -922,7 +953,7 @@
                                 <div class="group-tile" data-group-index="359">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e13</h3>
-                                        <h3 class="booth-name">sushii cosplayer</h3>
+                                        <h3 class="booth-name" data-search="sushii cosplayer">sushii cosplayer</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -939,7 +970,7 @@
                                 <div class="group-tile" data-group-index="360">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e14</h3>
-                                        <h3 class="booth-name">ruri</h3>
+                                        <h3 class="booth-name" data-search="ruri">ruri</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -957,7 +988,7 @@
                                 <div class="group-tile" data-group-index="361">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-e15-16</h3>
-                                        <h3 class="booth-name">carol x iris</h3>
+                                        <h3 class="booth-name" data-search="carol x iris">carol x iris</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -981,7 +1012,7 @@
                                 <div class="group-tile" data-group-index="362">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-f01-02</h3>
-                                        <h3 class="booth-name">9tkeefe & yonnie芋泥</h3>
+                                        <h3 class="booth-name" data-search="9tkeefe & yonnie芋泥">9tkeefe & yonnie芋泥</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -994,7 +1025,7 @@
                                 <div class="group-tile" data-group-index="363">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-f03-04</h3>
-                                        <h3 class="booth-name">sally dorasnow</h3>
+                                        <h3 class="booth-name" data-search="sally dorasnow">sally dorasnow</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -1009,7 +1040,7 @@
                                 <div class="group-tile" data-group-index="364">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-f05-06</h3>
-                                        <h3 class="booth-name">amelia khor 小飛鼠</h3>
+                                        <h3 class="booth-name" data-search="amelia khor 小飛鼠" data-search-type="cosplayer">amelia khor 小飛鼠</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -1023,7 +1054,7 @@
                                 <div class="group-tile" data-group-index="365">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-f07</h3>
-                                        <h3 class="booth-name">joann喵</h3>
+                                        <h3 class="booth-name" data-search="joann喵">joann喵</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -1039,7 +1070,7 @@
                                 <div class="group-tile" data-group-index="366">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-f08-09</h3>
-                                        <h3 class="booth-name">angie0_0</h3>
+                                        <h3 class="booth-name" data-search="angie0_0">angie0_0</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -1059,7 +1090,7 @@
                                 <div class="group-tile" data-group-index="367">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-f10</h3>
-                                        <h3 class="booth-name">eclair-nyanko</h3>
+                                        <h3 class="booth-name" data-search="eclair-nyanko">eclair-nyanko</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">badges / pins</div>
@@ -1075,7 +1106,7 @@
                                 <div class="group-tile" data-group-index="368">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-f11</h3>
-                                        <h3 class="booth-name">fishie 鱼姬 (inkol)</h3>
+                                        <h3 class="booth-name" data-search="fishie 鱼姬 (inkol)">fishie 鱼姬 (inkol)</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container"></div>
                                         <div class="circle-tag-container"></div>
@@ -1084,7 +1115,7 @@
                                 <div class="group-tile" data-group-index="369">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-f12</h3>
-                                        <h3 class="booth-name">yikjing小兔</h3>
+                                        <h3 class="booth-name" data-search="yikjing小兔">yikjing小兔</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container"></div>
                                         <div class="circle-tag-container"></div>
@@ -1093,7 +1124,7 @@
                                 <div class="group-tile" data-group-index="370">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-f13</h3>
-                                        <h3 class="booth-name">chel.c & yorenji</h3>
+                                        <h3 class="booth-name" data-search="chel.c & yorenji">chel.c & yorenji</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">illustration / printed book</div>
@@ -1106,7 +1137,7 @@
                                 <div class="group-tile" data-group-index="371">
                                     <div class="booth-detail">
                                         <h3 class="booth-number">c-f14</h3>
-                                        <h3 class="booth-name">ristelle</h3>
+                                        <h3 class="booth-name" data-search="ristelle">ristelle</h3>
                                         <div class="circle-detail"></div>
                                         <div class="circle-tag-container">
                                             <div class="circle-tag">bags</div>
