@@ -13,6 +13,24 @@
             <link rel="stylesheet" href="style.css?v=fd6b89b3">
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
             <script>
+                function randomBooth() {
+                    const booths = document.getElementsByClassName('group-tile');
+                    const randomIndex = Math.floor(Math.random() * booths.length);
+                    const randomBooth = booths[randomIndex];
+                    
+                    // Hide all booths first
+                    for(let booth of booths) {
+                        booth.style.display = "none";
+                    }
+                    
+                    // Show only the random booth
+                    randomBooth.style.display = "";
+                    
+                    // Clear search input
+                    document.getElementById('search-input').value = '';
+                }
+            </script>
+            <script>
                 function searchBooths() {
                     let input = document.getElementById('search-input');
                     let filter = input.value.toLowerCase();
@@ -53,8 +71,13 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center mt-3">
-                                    <button onclick="document.getElementById('map-container').style.display='none';this.style.display='none';document.getElementById('map-show-btn').style.display='block'" id="map-hide-btn" class="btn btn-primary mx-2 shadow-sm w-100">Hide Map</button>
-                                    <button onclick="document.getElementById('map-container').style.display='block';this.style.display='none';document.getElementById('map-hide-btn').style.display='block'" id="map-show-btn" class="btn btn-primary mx-2 shadow-sm w-100" style="display:none">Show Map</button>
+                                    <div class="w-50">
+                                        <button onclick="document.getElementById('map-container').style.display='none';this.style.display='none';document.getElementById('map-show-btn').style.display='block'" id="map-hide-btn" class="btn btn-primary mx-2 shadow-sm w-100">Hide Map</button>
+                                        <button onclick="document.getElementById('map-container').style.display='block';this.style.display='none';document.getElementById('map-hide-btn').style.display='block'" id="map-show-btn" class="btn btn-primary mx-2 shadow-sm w-100" style="display:none">Show Map</button>
+                                    </div>
+                                    <div class="w-50">
+                                        <button onclick="randomBooth()" class="btn btn-success mx-2 shadow-sm w-100">I'm Feeling Lucky!</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
