@@ -1,0 +1,938 @@
+{
+  "event": "Comic Fiesta 2024",
+  "source": {
+    "repository": "https://github.com/dennisbrian/cf2024cosplayer",
+    "revision": "768d4da",
+    "file": "sources/cf2024.html",
+    "sha256": "8f5439ddf466fcd8de56b3281eda1dff7db8c63695f32eb8af72c384875e842e",
+    "note": "Archived booth listings; shared booths are kept intact. Not a current attendance list or verified social directory."
+  },
+  "count": 66,
+  "cosplayers": [
+    {
+      "id": "cf2024-306",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "keychains",
+        "photobook",
+        "prints / poster / postcard",
+        "standee",
+        "wearables"
+      ],
+      "booth": "C-A01",
+      "name": "ely cosplay",
+      "row": "C-A"
+    },
+    {
+      "id": "cf2024-307",
+      "tags": [
+        "badges / pins",
+        "photobook",
+        "self made games",
+        "standee"
+      ],
+      "booth": "C-A02",
+      "name": "lea_coser",
+      "row": "C-A"
+    },
+    {
+      "id": "cf2024-308",
+      "tags": [
+        "badges / pins",
+        "photobook",
+        "prints / poster / postcard",
+        "self made games",
+        "wearables"
+      ],
+      "booth": "C-A03",
+      "name": "蚊子wenzi",
+      "row": "C-A"
+    },
+    {
+      "id": "cf2024-309",
+      "tags": [
+        "photobook",
+        "prints / poster / postcard",
+        "wearables"
+      ],
+      "booth": "C-A05-06",
+      "name": "yingtze",
+      "row": "C-A"
+    },
+    {
+      "id": "cf2024-310",
+      "tags": [
+        "keychains",
+        "photobook",
+        "prints / poster / postcard",
+        "standee"
+      ],
+      "booth": "C-A07-08",
+      "name": "aza miyuko",
+      "row": "C-A"
+    },
+    {
+      "id": "cf2024-311",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee",
+        "stickers"
+      ],
+      "booth": "C-A09",
+      "name": "senyuki cosplayer",
+      "row": "C-A"
+    },
+    {
+      "id": "cf2024-312",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "self made games",
+        "standee"
+      ],
+      "booth": "C-A10",
+      "name": "kagami 镜",
+      "row": "C-A"
+    },
+    {
+      "id": "cf2024-313",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "keychains",
+        "photobook",
+        "plushies",
+        "prints / poster / postcard",
+        "self made games",
+        "standee",
+        "stickers"
+      ],
+      "booth": "C-A11-12",
+      "name": "hayate 小爹 x kane 凯恩",
+      "row": "C-A"
+    },
+    {
+      "id": "cf2024-314",
+      "tags": [
+        "badges / pins",
+        "photobook",
+        "pillow",
+        "plushies",
+        "prints / poster / postcard",
+        "self made games",
+        "wearables"
+      ],
+      "booth": "C-A13",
+      "name": "eevon_cosplayer",
+      "row": "C-A"
+    },
+    {
+      "id": "cf2024-315",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "keychains",
+        "photobook",
+        "prints / poster / postcard",
+        "standee",
+        "wearables"
+      ],
+      "booth": "C-A14",
+      "name": "weii weii",
+      "row": "C-A"
+    },
+    {
+      "id": "cf2024-316",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "self made games",
+        "stickers"
+      ],
+      "booth": "C-A15",
+      "name": "jetaime呆咪",
+      "row": "C-A"
+    },
+    {
+      "id": "cf2024-317",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee",
+        "stickers",
+        "wearables"
+      ],
+      "booth": "C-A16",
+      "name": "rikkablurhound",
+      "row": "C-A"
+    },
+    {
+      "id": "cf2024-318",
+      "tags": [
+        "badges / pins",
+        "illustration / printed book",
+        "keychains",
+        "live commission",
+        "prints / poster / postcard",
+        "wearables"
+      ],
+      "booth": "C-B01",
+      "name": "animajinx team",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-319",
+      "tags": [],
+      "booth": "C-B02",
+      "name": "ymca (yuki x miiko)",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-320",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "prints / poster / postcard",
+        "self made games",
+        "standee",
+        "wearables"
+      ],
+      "booth": "C-B03",
+      "name": "ruii洛忆",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-321",
+      "tags": [
+        "keychains",
+        "photobook",
+        "prints / poster / postcard",
+        "stickers"
+      ],
+      "booth": "C-B04",
+      "name": "helenyan",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-322",
+      "tags": [],
+      "booth": "C-B05",
+      "name": "ebi 熊熊虾米",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-323",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "keychains",
+        "photobook",
+        "prints / poster / postcard",
+        "standee"
+      ],
+      "booth": "C-B06",
+      "name": "堕天yuxo",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-324",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "bookmarks",
+        "keychains",
+        "photobook",
+        "pillow",
+        "plushies",
+        "prints / poster / postcard",
+        "standee",
+        "stickers"
+      ],
+      "booth": "C-B07",
+      "name": "victoria薇薇",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-325",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "illustration / printed book",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee",
+        "wearables"
+      ],
+      "booth": "C-B08",
+      "name": "king angel 天王",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-326",
+      "tags": [
+        "photobook",
+        "prints / poster / postcard",
+        "standee"
+      ],
+      "booth": "C-B09-10",
+      "name": "thames",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-327",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "prints / poster / postcard",
+        "stickers"
+      ],
+      "booth": "C-B11",
+      "name": "i'm momoko",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-328",
+      "tags": [
+        "keychains",
+        "photobook",
+        "plushies",
+        "prints / poster / postcard",
+        "wearables"
+      ],
+      "booth": "C-B12",
+      "name": "akaei ray",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-329",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "stickers"
+      ],
+      "booth": "C-B13",
+      "name": "le josette",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-330",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "keychains",
+        "photobook",
+        "pillow",
+        "standee",
+        "wearables"
+      ],
+      "booth": "C-B14",
+      "name": "azulacan",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-331",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee"
+      ],
+      "booth": "C-B15",
+      "name": "jiajia佳佳",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-332",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "illustration / printed book",
+        "keychains",
+        "photobook",
+        "prints / poster / postcard",
+        "standee",
+        "stickers",
+        "wearables"
+      ],
+      "booth": "C-B16",
+      "name": "rithe daddy",
+      "row": "C-B"
+    },
+    {
+      "id": "cf2024-333",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee",
+        "wearables"
+      ],
+      "booth": "C-C01",
+      "name": "rynna遴儿",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-334",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "self made games"
+      ],
+      "booth": "C-C02",
+      "name": "phi 霏",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-335",
+      "tags": [
+        "keychains",
+        "photobook",
+        "prints / poster / postcard",
+        "standee",
+        "stickers"
+      ],
+      "booth": "C-C03",
+      "name": "vmeow-inkol",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-336",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "self made games",
+        "wearables"
+      ],
+      "booth": "C-C04",
+      "name": "momoko.xoxo小魔",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-337",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee",
+        "wearables"
+      ],
+      "booth": "C-C05",
+      "name": "nessarose cosplayer",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-338",
+      "tags": [
+        "badges / pins",
+        "photobook",
+        "prints / poster / postcard",
+        "wearables"
+      ],
+      "booth": "C-C06",
+      "name": "yuii鱿鱼 (inkol)",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-339",
+      "tags": [
+        "photobook",
+        "prints / poster / postcard",
+        "self made games",
+        "wearables"
+      ],
+      "booth": "C-C07-08",
+      "name": "mikki",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-340",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "illustration / printed book",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "self made games",
+        "stickers"
+      ],
+      "booth": "C-C09",
+      "name": "crystal x cheryl",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-341",
+      "tags": [
+        "badges / pins",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "self made games",
+        "standee",
+        "stickers"
+      ],
+      "booth": "C-C10",
+      "name": "tsuyu-sei x hana 月花",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-342",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "photobook",
+        "prints / poster / postcard",
+        "standee"
+      ],
+      "booth": "C-C11",
+      "name": "mai mai cosplayer",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-343",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "photobook",
+        "pillow",
+        "plushies",
+        "prints / poster / postcard",
+        "standee",
+        "stickers"
+      ],
+      "booth": "C-C12",
+      "name": "karyannn奶茶",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-344",
+      "tags": [
+        "badges / pins",
+        "bookmarks",
+        "illustration / printed book",
+        "live commission",
+        "photobook",
+        "prints / poster / postcard",
+        "self made games",
+        "standee",
+        "stickers"
+      ],
+      "booth": "C-C13",
+      "name": "kurisu",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-345",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee",
+        "stickers"
+      ],
+      "booth": "C-C14",
+      "name": "manami x jenny",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-346",
+      "tags": [
+        "badges / pins",
+        "photobook",
+        "prints / poster / postcard",
+        "self made games",
+        "wearables"
+      ],
+      "booth": "C-C15",
+      "name": "lizzy (inkol)",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-347",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "illustration / printed book",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee"
+      ],
+      "booth": "C-C16",
+      "name": "hiyori xiaoxia",
+      "row": "C-C"
+    },
+    {
+      "id": "cf2024-348",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "prints / poster / postcard",
+        "standee"
+      ],
+      "booth": "C-E01",
+      "name": "hanabi花火",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-349",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "illustration / printed book",
+        "keychains",
+        "photobook",
+        "pillow",
+        "plushies",
+        "prints / poster / postcard",
+        "self made games",
+        "standee"
+      ],
+      "booth": "C-E02",
+      "name": "ryukku-k",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-350",
+      "tags": [
+        "badges / pins",
+        "illustration / printed book",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee",
+        "stickers"
+      ],
+      "booth": "C-E03",
+      "name": "kaixin花生",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-351",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "keychains",
+        "photobook",
+        "pillow",
+        "self made games",
+        "standee",
+        "stickers",
+        "wearables"
+      ],
+      "booth": "C-E04",
+      "name": "reiko miiao",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-352",
+      "tags": [
+        "badges / pins",
+        "photobook",
+        "pillow",
+        "plushies",
+        "prints / poster / postcard",
+        "standee",
+        "stickers",
+        "wearables"
+      ],
+      "booth": "C-E05",
+      "name": "rina.tan",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-353",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "self made games",
+        "standee",
+        "stickers"
+      ],
+      "booth": "C-E06",
+      "name": "stella",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-354",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "bookmarks",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee",
+        "stickers",
+        "wearables"
+      ],
+      "booth": "C-E07",
+      "name": "chaerin 柔",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-355",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee",
+        "stickers"
+      ],
+      "booth": "C-E08",
+      "name": "mochii(inkol)",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-356",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard"
+      ],
+      "booth": "C-E09-10",
+      "name": "baobao",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-357",
+      "tags": [
+        "badges / pins",
+        "photobook",
+        "prints / poster / postcard",
+        "self made games"
+      ],
+      "booth": "C-E11",
+      "name": "zackt and roxanne",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-358",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "wearables"
+      ],
+      "booth": "C-E12",
+      "name": "takodesss (inkol)",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-359",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee",
+        "wearables"
+      ],
+      "booth": "C-E13",
+      "name": "sushii cosplayer",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-360",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "standee",
+        "stickers",
+        "wearables"
+      ],
+      "booth": "C-E14",
+      "name": "ruri",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-361",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "illustration / printed book",
+        "keychains",
+        "photobook",
+        "pillow",
+        "self made games",
+        "standee",
+        "stickers"
+      ],
+      "booth": "C-E15-16",
+      "name": "carol x iris",
+      "row": "C-E"
+    },
+    {
+      "id": "cf2024-362",
+      "tags": [
+        "badges / pins",
+        "photobook",
+        "prints / poster / postcard"
+      ],
+      "booth": "C-F01-02",
+      "name": "9tkeefe & yonnie芋泥",
+      "row": "C-F"
+    },
+    {
+      "id": "cf2024-363",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "keychains",
+        "photobook",
+        "prints / poster / postcard"
+      ],
+      "booth": "C-F03-04",
+      "name": "sally dorasnow",
+      "row": "C-F"
+    },
+    {
+      "id": "cf2024-364",
+      "tags": [
+        "badges / pins",
+        "photobook",
+        "prints / poster / postcard",
+        "stickers"
+      ],
+      "booth": "C-F05-06",
+      "name": "amelia khor 小飛鼠",
+      "row": "C-F"
+    },
+    {
+      "id": "cf2024-365",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "wearables"
+      ],
+      "booth": "C-F07",
+      "name": "joann喵",
+      "row": "C-F"
+    },
+    {
+      "id": "cf2024-366",
+      "tags": [
+        "badges / pins",
+        "bags",
+        "illustration / printed book",
+        "keychains",
+        "photobook",
+        "plushies",
+        "prints / poster / postcard",
+        "standee",
+        "stickers",
+        "wearables"
+      ],
+      "booth": "C-F08-09",
+      "name": "angie0_0",
+      "row": "C-F"
+    },
+    {
+      "id": "cf2024-367",
+      "tags": [
+        "badges / pins",
+        "keychains",
+        "photobook",
+        "pillow",
+        "prints / poster / postcard",
+        "stickers"
+      ],
+      "booth": "C-F10",
+      "name": "eclair-nyanko",
+      "row": "C-F"
+    },
+    {
+      "id": "cf2024-368",
+      "tags": [],
+      "booth": "C-F11",
+      "name": "fishie 鱼姬 (inkol)",
+      "row": "C-F"
+    },
+    {
+      "id": "cf2024-369",
+      "tags": [],
+      "booth": "C-F12",
+      "name": "yikjing小兔",
+      "row": "C-F"
+    },
+    {
+      "id": "cf2024-370",
+      "tags": [
+        "illustration / printed book",
+        "photobook",
+        "prints / poster / postcard"
+      ],
+      "booth": "C-F13",
+      "name": "chel.c & yorenji",
+      "row": "C-F"
+    },
+    {
+      "id": "cf2024-371",
+      "tags": [
+        "bags",
+        "keychains",
+        "photobook",
+        "prints / poster / postcard",
+        "wearables"
+      ],
+      "booth": "C-F14",
+      "name": "ristelle",
+      "row": "C-F"
+    }
+  ]
+}

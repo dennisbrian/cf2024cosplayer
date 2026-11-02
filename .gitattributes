@@ -1,0 +1,4 @@
+# Preserve the archived source bytes used by the dataset's SHA-256.
+sources/cf2024.html -text -whitespace
+# Preserve the export's CRLF line endings and UTF-8 BOM.
+data/cosplayers.csv -text whitespace=cr-at-eol
